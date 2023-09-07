@@ -1,9 +1,9 @@
 :root {
---blanco: #FFF;
---oscuro: #212121;
---primario: #FFC107;
---secundario: #0097A7;
---gris: #757575;
+   --blanco: #FFF;
+   --oscuro: #212121;
+   --primario: #FFC107;
+   --secundario: #0097A7;
+   --gris: #757575;
 }
 
 html {
@@ -11,19 +11,44 @@ html {
 }
 
 body {
-font-size: 16px;
-font-family:'Krub', sans-serif;
+   font-size: 16px;
+   font-family: 'Krub', sans-serif;
 }
 
 .titulo {
-text-align: center;
-font-size: 3.8rem;
-font-weight: 600;
+   text-align: center;
+   font-size: 3.8rem;
+   font-weight: 600;
 
 }
 
 .titulo span {
-font-size: 2rem;
-color: blue;
+   font-size: 2rem;
 }
-   
+
+.contenedor {
+   width: 120rem;
+   margin: 0 auto;
+}
+
+.nav-bg {
+   background-color: var(--secundario);
+}
+
+.navegacion-principal {
+   display: flex;
+   justify-content: space-around;
+}
+
+.navegacion-principal a {
+   color: var(--blanco);
+   text-decoration: none;
+   font-size: 2rem;
+   font-weight: 700;
+   padding: 1rem;
+}
+
+.navegacion-principal a:hover {
+   background-color: var(--primario);
+   color: var(--oscuro);
+}
